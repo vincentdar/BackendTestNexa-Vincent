@@ -1,0 +1,79 @@
+GET http://127.0.0.1:3000/
+
+###
+
+GET http://127.0.0.1:3000/admin
+
+###
+
+# POST http://127.0.0.1:8080/admin
+# Content-Type: application/json
+
+# {
+#     "username": "lagimencoba",
+#     "password": "12345678"
+# }
+
+###
+
+POST http://127.0.0.1:3000/login
+Content-Type: application/json
+
+{
+    "username": "lagimencoba",
+    "password": "12345678"
+}
+
+###
+
+POST http://127.0.0.1:3000/listkaryawan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJuYW1lIjoibGFnaW1lbmNvYmEiLCJhZG1pblBhc3N3b3JkIjoiMTIzNDU2NzgiLCJpYXQiOjE2OTI2NzUzMzIsImV4cCI6MTY5Mjc2MTczMn0.rkRrqyddbJzaQZJQHaeqms4LacLgmsXWhZZcyh6JdNA
+Content-Type: application/json
+
+{
+    "start": 0,
+    "count": 10,
+    "keyword": "sky"
+}
+
+###
+
+POST http://127.0.0.1:3000/addkaryawan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJuYW1lIjoibGFnaW1lbmNvYmEiLCJhZG1pblBhc3N3b3JkIjoiMTIzNDU2NzgiLCJpYXQiOjE2OTI2NzUzMzIsImV4cCI6MTY5Mjc2MTczMn0.rkRrqyddbJzaQZJQHaeqms4LacLgmsXWhZZcyh6JdNA
+Content-Type: application/json
+
+{
+    "nama": "Anakin Skywalker",
+    "alamat": "Jl.Anakin",
+    "gend": "L",
+    "photo": "a",
+    "tgl_lahir": "2013-11-15"
+}
+
+###
+
+POST http://127.0.0.1:3000/updatekaryawan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJuYW1lIjoibGFnaW1lbmNvYmEiLCJhZG1pblBhc3N3b3JkIjoiMTIzNDU2NzgiLCJpYXQiOjE2OTI2NzUzMzIsImV4cCI6MTY5Mjc2MTczMn0.rkRrqyddbJzaQZJQHaeqms4LacLgmsXWhZZcyh6JdNA
+Content-Type: application/json
+
+{
+    "nip": "20237481",
+    "nama": "Luke Skywalker",
+    "alamat": "Jl.Jedi",
+    "gend": "L",
+    "photo": "ananaiubcaanja",
+    "tgl_lahir": "2013-11-15"
+}
+
+###
+
+POST http://127.0.0.1:3000/nonaktifkaryawan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pblVzZXJuYW1lIjoibGFnaW1lbmNvYmEiLCJhZG1pblBhc3N3b3JkIjoiMTIzNDU2NzgiLCJpYXQiOjE2OTI2NzUzMzIsImV4cCI6MTY5Mjc2MTczMn0.rkRrqyddbJzaQZJQHaeqms4LacLgmsXWhZZcyh6JdNA
+Content-Type: application/json
+
+{
+    "nip": "20237481"
+}
+   
+
+
